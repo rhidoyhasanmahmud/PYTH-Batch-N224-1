@@ -27,3 +27,6 @@
 <3> git remote origin url-git
 
 >>> Pull Request Process << 
+
+1. Fork 
+2. git clone url [Self]
