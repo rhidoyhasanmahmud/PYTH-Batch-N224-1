@@ -30,3 +30,9 @@
 
 1. Fork 
 2. git clone url [Self]
+3. [Change readme]
+4. git add .
+5. git commit -m "message"
+6. git push origin main 
+7. check - Sync fork 
+8. Pull request place. [Parent Report accept]
