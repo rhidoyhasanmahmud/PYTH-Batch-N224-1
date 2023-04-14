@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add new book</title>
+</head>
+<body>
+<form method="POST" action="/update/{{Book.id}}">
+    {% csrf_token %}
+   <div>
+
+     <div>
+         <u><strong>Update new Book</strong></u>
+     </div>
+
+
+<br>
+
+<br>
+     <div>
+
+         <label>Enter Book Name</label>
+         <div>
+            <input type="text" name="name" required value="{{Book.Name}}">
+         </div>
+
+     </div>
+<br>
+     <div>
+
+         <label>Enter Book price</label>
+         <div>
+            <input type="text" name="price" required value="{{Book.price}}">
+         </div>
+
+     </div>
+<br>
+     <div>
+
+         <label>Enter Book publisher</label>
+         <div>
+            <input type="text" name="publisher" required value="{{Book.publisher}}">
+         </div>
+
+     </div>
+    <br>
+    <div>
+      <div>
+         <button type="submit">Submit now</button>
+      </div>
+    </div>
+
+   </div>
+</form>
+</body>
+</html>
