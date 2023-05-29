@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add new book</title>
+</head>
+<body>
+<form method="POST" action="addnew">
+    {% csrf_token %}
+   <div>
+
+     <div>
+         <u><strong>Add new Book</strong></u>
+     </div>
+
+
+<br>
+
+<br>
+     <div>
+
+         <label>Enter Book Name</label>
+         <div>
+            {{form.Name}}
+         </div>
+
+     </div>
+<br>
+     <div>
+
+         <label>Enter Book price</label>
+         <div>
+            {{form.price}}
+         </div>
+
+     </div>
+<br>
+     <div>
+
+         <label>Enter Book publisher</label>
+         <div>
+            {{form.publisher}}
+         </div>
+
+     </div>
+    <br>
+    <div>
+      <div>
+         <button type="submit">Submit now</button>
+      </div>
+    </div>
+
+   </div>
+</form>
+</body>
+</html>
